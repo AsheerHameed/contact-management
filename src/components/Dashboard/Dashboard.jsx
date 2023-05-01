@@ -68,7 +68,7 @@ const Dashboard = () => {
         </div>
         <Routes>
           <Route
-            path="/"
+            path="/contact-management"
             element={
               <div className="welcome-heading">
                 <h1>
