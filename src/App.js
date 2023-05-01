@@ -1,9 +1,9 @@
-import './App.css';
-import ContactForm from './contacts/ContactForm';
+import React from "react";
+import Dashboard from "./components/Dashboard/Dashboard";
 function App() {
   return (
-    <div className="App">
-     <ContactForm/>
+    <div>
+      <Dashboard/>
     </div>
   );
 }

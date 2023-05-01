@@ -1,0 +1,10 @@
+.line-graph-container{
+  display: flex;
+  justify-content: flex-start;
+  padding: 80px 20px;
+  align-items: center;
+  flex-direction: column;
+}
+.line-graph-container h2{
+    padding: 20px 0;
+}

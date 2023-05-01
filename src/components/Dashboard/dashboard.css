@@ -1,0 +1,133 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-family: var(--font-family);
+  padding: 20px;
+  flex-basis: 20%;
+  margin-right: 20px;
+}
+.welcome-heading {
+  display: flex;
+  justify-content: flex-start;
+  padding: 80px 0;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar ul li ul li {
+  list-style: disc;
+  margin: 5px 40px;
+  font-size: 14px;
+}
+.content-container {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  flex-grow: 1;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+.contact-form-container {
+  flex-basis: 40%;
+  padding: 20px;
+}
+
+.submissions {
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+    background: url("https://img.icons8.com/?size=512&id=8113&format=png")
+      no-repeat center center;
+    background-size: contain;
+  }
+
+  .content-container {
+    padding: 10px;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .hamburger-menu.active {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    background-color: #4caf50;
+    color: #fff;
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger-menu.active ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .hamburger-menu.active li {
+    margin-bottom: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .charts-maps li {
+    margin:0 12px
+  }
+  .hamburger-menu.active a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .sidebar ul li ul li {
+    list-style: disc;
+    margin: 120px 40px;
+    font-size: 14px;
+  }
+}
